@@ -1,0 +1,273 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+.body {
+    text-align: center;
+}
+
+.heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(21, 194, 171);
+}
+
+.leftside_heading {
+    display: flex;
+    align-items: center;
+    height: 50px;
+    margin-left: 40px;
+}
+
+.leftside_heading span {
+    font-size: 22px;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.middle_heading {
+    display: flex;
+    align-items: center;
+    height: 50px;
+}
+
+.middle_heading a {
+    font-size: 20px;
+    color: #ffffff;
+    text-decoration: none;
+    margin: 10px;
+}
+
+.middle_heading .middle_first {
+    text-decoration: underline;
+    text-decoration-color: rgb(185, 8, 97);
+    text-underline-offset: 8px;
+}
+
+.middle_heading .middle_second {
+    color: rgb(185, 8, 97);
+    font-weight: bold;
+}
+
+.middle_heading .middle_third {
+    color: rgb(185, 8, 97);
+    font-weight: bold;
+}
+
+.rightside_heading {
+    margin-right: 35px;
+}
+
+.rightside_heading a {
+    background-color: #ffffff;
+    padding: 2px 12px;
+    font-size: 12px;
+    margin: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    color: black;
+}
+
+/*Float*/
+
+.float_container {
+    background-color: rgb(233, 224, 224);
+    padding: 80px 0;
+    margin-bottom: 80px;
+}
+
+.float_container h4 {
+    font-weight: bold;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.float_container span {
+    font-size: 22px;
+}
+
+.allthree_block {
+    display: flex;
+    justify-content: center;
+    /* flex-direction: column; */
+    gap: 15px;
+}
+
+.big_block {
+    border: 2px solid rgb(185, 8, 97);
+    padding: 10px;
+    width: 25%;
+}
+
+.box {
+    line-height: 80px;
+    margin: 0 auto;
+    margin-bottom: 5px;
+}
+
+.box.sidekick {
+    width: 80px;
+    height: 80px;
+    background-color: rgb(120, 238, 222);
+    border: 5px solid rgb(21, 194, 171);
+    border-radius: 5px;
+    text-align: center;
+}
+
+.box.hero {
+    width: 80px;
+    height: 80px;
+    border: 5px solid rgb(185, 8, 97);
+    background-color: rgb(255, 138, 196);
+    border-radius: 5px;
+    text-align: center;
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+
+
+.unique {
+    margin-bottom: 80px;
+}
+
+.unique h4 {
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.unique h4 span {
+    font-size: 26px;
+    font-weight: 600;
+}
+
+.box.hero.relative {
+    position: relative;
+    top: 40px;
+    left: 40px;
+}
+
+.allthree_block.relative {
+    position: relative;
+}
+
+.box.hero.absolute {
+    position: absolute;
+    right: 360px;
+}
+
+.big_block.scroll {
+    margin: 0 auto;
+    height: 350px;
+    overflow-y: scroll;
+    margin-top: 20px;
+}
+
+.allthree_block.scroll p {
+    text-align: justify;
+}
+
+.box.hero.sticky {
+    position: sticky;
+    top: 0;
+}
+
+.flex_container {
+    background-color: rgb(233, 224, 224);
+    padding: 60px 0;
+}
+
+.flex_container h4 {
+    margin-bottom: 60px;
+    text-align: center;
+}
+
+.flex_container h4 span {
+    font-weight: bold;
+    font-size: 22px;
+}
+
+.flex_box {
+    width: 150px;
+    height: 150px;
+    background-color: rgb(171, 243, 235);
+    border: 5px solid rgb(21, 194, 171);
+    border-radius: 5px;
+    line-height: 150px;
+}
+
+.first {
+    margin: 0 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+    border-bottom: 3px solid rgb(185, 8, 97);
+    padding-bottom: 50px;
+    margin-bottom: 80px;
+}
+
+.second {
+    margin: 0 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 10px;
+    padding-bottom: 50px;
+    margin-bottom: 80px;
+    border-bottom: 3px solid rgb(185, 8, 97);
+}
+
+.third {
+    margin: 0 50px;
+    display: flex;
+    gap: 10px;
+    padding-bottom: 80px;
+    margin-bottom: 80px;
+    border-bottom: 3px solid rgb(185, 8, 97);
+}
+
+.third .big {
+    flex-grow: 1;
+}
+
+.forth {
+    margin: 0 50px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 80px;
+}
+
+footer {
+    padding: 10px;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+    background-color: rgb(21, 194, 171);
+}
+
+
+.top {
+    position: fixed;
+    top: 550px;
+    right: 20px;
+    background-color: rgb(185, 8, 97);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    color: #fff;
+}
